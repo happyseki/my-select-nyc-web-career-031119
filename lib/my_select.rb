@@ -1,10 +1,9 @@
 def my_select(collection)
-  selected = []
   i = 0
   while i < collection.length
-  selected << yield(collection[i].even?)
+   yield(collection[i].even? == true)
   i += 1
   end
-  selected
+   collection
  # your code here!
 end
